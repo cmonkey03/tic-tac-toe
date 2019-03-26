@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', (e) => {
   let game = document.getElementById('game');
   let board = document.createElement('table');
   board.id = 'board'
@@ -15,5 +15,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   game.appendChild(board);
+
+  board.addEventListener('click', (e) => {
+    console.log(e.target)
+  });
 
 });
