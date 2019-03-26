@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
   game.appendChild(board);
 
   board.addEventListener('click', (e) => {
-    console.log(e.target)
+    let gameSquare = e.target
+    console.log(gameSquare)
+    gameSquare.innerHTML = 'x'
   });
 
 });
