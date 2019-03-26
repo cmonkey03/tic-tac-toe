@@ -7,15 +7,18 @@ body {
   font-family: 'Baloo Chettan', cursive;
 }
 
-.game {
-  display: grid;
+#board tr td {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #1c1c1c;
+}
+
+#board tr td:hover {
+  background: #e4e4e4;
+  cursor: pointer;
 }
 
 h1 {
   color: rgb(50, 54, 61);
   padding: 10vh;
-}
-
-.square {
-  border: 2px;
 }
