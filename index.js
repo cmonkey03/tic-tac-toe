@@ -1,20 +1,19 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   let game = document.getElementById('game');
-  let gameTable = document.createElement('table');
+  let board = document.createElement('table');
+  board.id = 'board'
 
   for (let i = 0; i < 3; i++) {
     const gameRow = document.createElement('tr');
-    gameRow.id = 'row' + i;
 
     for (let j = 0; j < 3; j++) {
       const gameSquare = document.createElement('td');
-      gameSquare.id = 'cell' + i + j;
       gameRow.appendChild(gameSquare);
     };
 
-    gameTable.appendChild(gameRow);
+    board.appendChild(gameRow);
   }
 
-  game.appendChild(gameTable);
+  game.appendChild(board);
 
 });

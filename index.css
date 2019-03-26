@@ -7,8 +7,15 @@ body {
   font-family: 'Baloo Chettan', cursive;
 }
 
-#cell {
-  border: 2px;
+#board tr td {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #1c1c1c;
+}
+
+#board tr td:hover {
+  background: #e4e4e4;
+  cursor: pointer;
 }
 
 h1 {
