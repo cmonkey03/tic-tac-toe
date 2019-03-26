@@ -1,13 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  let game = document.getElementById('game')
-
-  // for (let i = 0; i < 9; i++) {
-  //   let gameSquare = document.createElement('div')
-  //   gameSquare.className = 'square'
-  //   gameSquare.id = i
-  //   game.appendChild(gameSquare)
-  // }
-
+  let game = document.getElementById('game');
   let gameTable = document.createElement('table');
 
   for (let i = 0; i < 3; i++) {
