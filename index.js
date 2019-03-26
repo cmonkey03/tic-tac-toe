@@ -5,12 +5,22 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   board.id = 'board'
 
+  //create game table rows and cells
   for (let i = 0; i < 3; i++) {
     const gameRow = document.createElement('tr');
 
     for (let j = 0; j < 3; j++) {
       const gameSquare = document.createElement('td');
       gameRow.appendChild(gameSquare);
+
+      //listen for player clicks, fill cells and score game
+      gameSquare.addEventListener('click', function gamePlay() {
+        let gameSquare = event.target
+        play % 2 === 0 ? gameSquare.innerHTML = 'x' : gameSquare.innerHTML = 'o'
+        play++
+        gameSquare.removeEventListener('click', gamePlay);
+        // scoreWinner()
+      });
     };
 
     board.appendChild(gameRow);
@@ -18,10 +28,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   game.appendChild(board);
 
-  board.addEventListener('click', (e) => {
-    let gameSquare = e.target
-    play % 2 === 0 ? gameSquare.innerHTML = 'x' : gameSquare.innerHTML = 'o'
-    play++
-  });
-
 });
+
+// function scoreWinner() {
+//
+// }
