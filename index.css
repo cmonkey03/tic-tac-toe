@@ -11,6 +11,8 @@ body {
   width: 90px;
   height: 90px;
   border: 1px solid #1c1c1c;
+  font-size: 60px;
+  text-align: center;
 }
 
 #board tr td:hover {
