@@ -3,13 +3,18 @@ body {
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: rgb(27, 99, 214);
 }
 
 .game {
-
+  display: grid;
 }
 
 h1 {
-  color: red;
+  color: rgb(91, 11, 25);
+  padding: 10vh;
+}
+
+.square {
+  border: 2px;
 }
