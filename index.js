@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   for (let i = 0; i < 9; i++) {
     let gameSquare = document.createElement('div')
-    gameSquare.className = 'square' + i
+    gameSquare.className = 'square'
+    gameSquare.id = i
     game.appendChild(gameSquare)
   }
 
