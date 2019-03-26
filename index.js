@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', (e) => {
+  let play = 1;
   let game = document.getElementById('game');
   let board = document.createElement('table');
+
   board.id = 'board'
 
   for (let i = 0; i < 3; i++) {
@@ -18,8 +20,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   board.addEventListener('click', (e) => {
     let gameSquare = e.target
-    console.log(gameSquare)
-    gameSquare.innerHTML = 'x'
+    play % 2 === 0 ? gameSquare.innerHTML = 'x' : gameSquare.innerHTML = 'o'
+    play++
   });
 
 });
