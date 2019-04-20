@@ -1,4 +1,6 @@
-import winner from './ScoreWinner'
+import winner from './ScoreWinner.js';
+
+console.log(winner)
 
 document.addEventListener('DOMContentLoaded', (e) => {
   let play = 1;
