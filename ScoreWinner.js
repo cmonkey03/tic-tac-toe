@@ -18,7 +18,7 @@ const boardDiag = [
   [o, x, x]
 ]
 
-function winner(board) {
+export default function ScoreWinner(board) {
   for (var i = 0; i <= 2; i++) {
       //column win solution
       if (board[i][0] === board[i][1] && board[i][1] === board[i][2]) {
@@ -45,4 +45,4 @@ function winner(board) {
   // if column: board[0][0] board[0][1], board[0][2] are same
   // increment board[i][0]
   //return winner
-console.log(winner(boardRow))
+// console.log(winner(boardRow))
