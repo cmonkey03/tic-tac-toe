@@ -1,4 +1,4 @@
-import winner from './ScoreWinner.js';
+import winner from './src/ScoreWinner.js';
 
 console.log(winner)
 
