@@ -46,3 +46,5 @@ function winner(board) {
   // increment board[i][0]
   //return winner
 console.log(winner(boardRow))
+
+export default winner;

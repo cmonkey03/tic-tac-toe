@@ -1,3 +1,5 @@
+import winner from './ScoreWinner'
+
 document.addEventListener('DOMContentLoaded', (e) => {
   let play = 1;
   let game = document.getElementById('game');
